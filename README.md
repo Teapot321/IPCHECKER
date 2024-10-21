@@ -5,4 +5,5 @@
 Не используйте данный инструмент для незаконных действий или в нарушении прав других лиц.
 
 WARNING:
-The tool was created for educational purposes. The author is not responsible for it, as well as for its use.
+This tool is intended solely for educational purposes. As a developer, I am not responsible for any consequences arising from the use of this tool. 
+Do not use this tool for illegal actions or in violation of the rights of others.
