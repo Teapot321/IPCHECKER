@@ -1,19 +1,20 @@
 import os
 import subprocess
 import sys
-import requests
-import webbrowser
-from pyfiglet import Figlet
-from termcolor import colored
 
-# Типа да
-required_packages = ['requests', 'pyfiglet', 'termcolor','webbrowser','subprocess']
+# Список пакетов
+required_packages = ['requests', 'termcolor']
 
+# Установка недостающих пакетов
 for package in required_packages:
     try:
         __import__(package)
     except ImportError:
         subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+
+import requests
+from pyfiglet import Figlet
+from termcolor import colored
 
 # Заставка
 figlet = Figlet(font='slant')
@@ -39,7 +40,7 @@ while True:
         print(f"Широта, долгота: {data.get('loc', 'N/A')}")
         print(f"Провайдер: {data.get('org', 'N/A')}")
 
-        # Извлечение широты и долготы 
+        # Извлечение широты и долготы
         loc = data.get('loc', '0,0').split(',')
         latitude = loc[0]
         longitude = loc[1]
@@ -47,10 +48,6 @@ while True:
         # Ссылка на локу
         link = f"https://geotree.ru/coordinates?lat={latitude}&lon={longitude}&z=15&mlat={latitude}&mlon={longitude}&c={longitude},{latitude}"
         print(f"Локация: {link}")
-
-        # Открытие ссылки
-        if open_link.lower() == 'да':
-            webbrowser.open(link)
 
     except Exception as e:
         print(f"Ошибка: {e}")
