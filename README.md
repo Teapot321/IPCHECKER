@@ -6,7 +6,7 @@ WARNING:
 This tool is intended solely for educational purposes. As a developer, I am not responsible for any consequences arising from the use of this tool. 
 Do not use this tool for illegal actions or in violation of the rights of others.
 
-![image](https://github.com/user-attachments/assets/31a00226-05a9-4d20-aaae-6fa7fc4ef1da)
+![image](https://github.com/user-attachments/assets/c0531857-0ee0-4211-b957-3b63eb94189a)
 
 **RU** Для запуска IPCHECKER.py установите python, переместите файл IPCHECKER.py на рабочий стол, а после введите эти команды в терминал
 
