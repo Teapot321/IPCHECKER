@@ -38,6 +38,8 @@ while True:
         print(f"Регион: {data.get('region', 'N/A')}")
         print(f"Страна: {data.get('country', 'N/A')}")
         print(f"Широта, долгота: {data.get('loc', 'N/A')}")
+        print(f"Индекс: {data.get('postal', 'N/A')}")
+        print(f"Время: {data.get('timezone', 'N/A')}")
         print(f"Провайдер: {data.get('org', 'N/A')}")
 
         # Извлечение широты и долготы
